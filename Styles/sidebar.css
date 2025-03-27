@@ -1,0 +1,70 @@
+.sidebar {
+  width: 70px;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  font-size: 10px;
+  align-items: center;
+  z-index: 101;
+  padding-top: 5px;
+
+}
+
+.sidebar-home-icon, .sidebar-explore-icon, .sidebar-subscription-icon, .sidebar-originals-icon, .sidebar-youtube-music-icon, .sidebar-library-icon  {
+  width: 24px;
+}
+
+.sidebar-link {
+  display: flex;
+  flex-direction: column;
+  height: 74px;
+  margin-bottom: 1px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(236, 235, 235);
+}
+
+.sidebar-link img {
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div {
+  font-size: 10px;
+  padding-left: px;
+  padding-right: px;
+}
+
+
+@media (min-width: 1200px) {
+  .sidebar {
+    min-width: 200px;
+  }
+  .sidebar-link {
+    flex-direction: row;
+    justify-content: left;
+    padding: 0 20px 0 20px;
+    flex: 70px 1fr;
+  }
+
+  .sidebar-link img  {
+    height: 34px;
+    margin-right: 24px;
+  }
+
+  .sidebar-link div {
+    font-size: 15px;
+  }
+
+  .sidebar-link:hover {
+    border-radius: 10px;
+  }
+}
